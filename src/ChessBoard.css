@@ -1,0 +1,66 @@
+/* ChessBoard.css */
+.chess-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+table.center {
+  border-collapse: collapse;
+  margin: 0 auto;
+  border: 2px solid #333;
+  background-color: #f8f8f8;
+}
+
+td {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+td.box-inner {
+  border: none;
+  background-color: transparent;
+  cursor: default;
+}
+
+tr.border td {
+  border: none;
+  background-color: transparent;
+  cursor: default;
+}
+
+td.odd {
+  background-color: #b58863;
+}
+
+td.even {
+  background-color: #f0d9b5;
+}
+
+td.odd:hover,
+td.even:hover {
+  background-color: #d1c3a7;
+}
+
+.fa-chess-rook,
+.fa-chess-knight,
+.fa-chess-bishop,
+.fa-chess-king,
+.fa-chess-queen,
+.fa-chess-pawn {
+  font-size: 36px;
+  color: black;
+}
+
+tr.border .box-inner {
+  width: auto;
+  height: auto;
+  padding: 0;
+  font-size: 18px;
+}
+
